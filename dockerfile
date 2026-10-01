@@ -2,11 +2,11 @@ FROM python:3.13-alpine
 
 WORKDIR /app
 
-COPY app/requirments.txt .
+COPY requirments.txt .
 
 RUN pip install --no-cache-dir -r requirments.txt
 
-COPY app/main.py .
+COPY main.py .
 
 EXPOSE 5000
 
